@@ -39,17 +39,17 @@ if (nilai >= 0 && nilai <= 6){
 }
 $('.kategori').html(kategori)
 
-$('.nama').html(get_url_parameter('a'))
-$('.nomor-registrasi').html(get_url_parameter('b'))
-$('.tanggal-lahir').html(get_url_parameter('c'))
+$('.nama').html(get_url_parameter('a').replace(/\+/g, ' '))
+$('.nomor-registrasi').html(get_url_parameter('b').replace(/\+/g, ' '))
+$('.tanggal-lahir').html(get_url_parameter('c').replace(/\+/g, ' '))
 $('.jenis-kelamin').html(get_url_parameter('d'))
-$('.lokasi').html(get_url_parameter('e'))
-$('.tindak-pidana').html(get_url_parameter('f'))
-$('.lama-pidana').html(get_url_parameter('g'))
+$('.lokasi').html(get_url_parameter('e').replace(/\+/g, ' '))
+$('.tindak-pidana').html(get_url_parameter('f').replace(/\+/g, ' '))
+$('.lama-pidana').html(get_url_parameter('g').replace(/\+/g, ' '))
 
 $('.alasan-assesment-dilakukan').html(get_url_parameter('h'))
-$('.alasan-lainnya').html(get_url_parameter('i'))
-$('.nama-pewawancara').html(get_url_parameter('j'))
+$('.alasan-lainnya').html(get_url_parameter('i').replace(/\+/g, ' '))
+$('.nama-pewawancara').html(get_url_parameter('j').replace(/\+/g, ' '))
 $('.tanggal-assesment').html(get_url_parameter('k'))
 
 // jawaban
