@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asesment Resiko Residivis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bin/spectre/spectre.min.css">
+	<link rel="stylesheet" type="text/css" href="bin/spectre/spectre-exp.min.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<br>
+		<h4 class="text-center">Assesment Resiko Residivis</h4>
+		<div class="divider"></div>
+
+		<progress class="progress progress-nilai-total" value="25" max="20"></progress>
+		<p><strong>Nilai total:</strong> <span class="nilai-total"></span></p>
+
+		<ul class="step step-kategori">
+		  <li class="step-item rendah">
+		    <a href="#" class="tooltip" data-tooltip="Rendah">Rendah</a>
+		  </li>
+		  <li class="step-item menengah">
+		    <a href="#" class="tooltip" data-tooltip="Menengah">Menengah</a>
+		  </li>
+		  <li class="step-item tinggi">
+		    <a href="#" class="tooltip" data-tooltip="Tinggi">Tinggi</a>
+		  </li>
+		</ul>
+		<p><strong>Kategori:</strong> <span class="kategori"></span></p>
+		
+		<div class="columns">
+		  <div class="column text-right">
+		    <p><strong>Nama:</strong><br><span class="nama"></span></p>
+			<p><strong>Nomor Registrasi:</strong><br><span class="nomor-registrasi"></span></p>
+			<p><strong>Tanggal Lahir:</strong><br><span class="tanggal-lahir"></span></p>
+		  </div>
+		  <div class="divider-vert" data-content="AND"></div>
+		  <div class="column">
+		    <p><strong>Jenis Kelamin:</strong><br><span class="jenis-kelamin"></span></p>
+			<p><strong>Lokasi:</strong><br><span class="lokasi"></span></p>
+		  </div>
+		</div>
+
+		<div class="empty">
+			<div class="columns">
+				<div class="column col-6">
+					<strong>Tindak Pidana:</strong><br>
+					<span class="tindak-pidana"></span>
+				</div>
+				<div class="column col-6">
+					<strong>Lama Pidana:</strong><br>
+					<span class="lama-pidana"></span>
+				</div>
+			</div>
+		</div>
+
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>Alasan Assesment Dilakukan</td>
+					<td>:</td>
+					<td><span class="alasan-assesment-dilakukan"></span></td>
+				</tr>
+				<tr>
+					<td>Alasan Lainnya</td>
+					<td>:</td>
+					<td><span class="alasan-lainnya"></span></td>
+				</tr>
+				<tr>
+					<td>Nama Pewawancara</td>
+					<td>:</td>
+					<td><span class="nama-pewawancara"></span></td>
+				</tr>
+				<tr>
+					<td>Tanggal Assesment</td>
+					<td>:</td>
+					<td><span class="tanggal-assesment"></span></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<h3>Rincian Jawaban</h3>
+
+		<fieldset disabled="">
+			<ol>
+
+				<li>
+					<em>Pertama kali di tahan pada usia ≤ 16 tahun</em>
+					<div class="form-group soal-1">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Ya
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Tidak
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Jumlah hukuman pidana/putusan pengadilan dalam 10 tahun terakhir (termasuk diversi/denda/hukuman penjara)</em>
+					<div class="form-group soal-2">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> 3 atau lebih
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> 1-2
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-3">
+					    <i class="form-icon"></i> 0
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Usia pada awal menjalani hukuman pidana yang sekarang ini</em>
+					<div class="form-group soal-3">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Dibawah 17
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> 17-24
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-3">
+					    <i class="form-icon"></i> 25-34
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-4">
+					    <i class="form-icon"></i> 35 lebih
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Tindak pidana berhubungan dengan Alkohol/narkoba</em>
+					<div class="form-group soal-4">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Ya
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Tidak
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Apakah WBP pernah melakukan pelanggaran Peradilan (misalnya tidak datang ke pengadilan, pelanggaran PB atau pelanggaran disiplin Lapas/Rutan)</em>
+					<div class="form-group soal-5">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Ya
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Tidak
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Pendidikan terakhir hingga tamat</em>
+					<div class="form-group soal-6">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> SD atau lebih rendah
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> SMP, SMA / SMK
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-3">
+					    <i class="form-icon"></i> Lebih tinggi dari SMA
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Status pekerjaan sebelum pemidanaan</em>
+					<div class="form-group soal-7">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Menganggur
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Ibu Rumah Tangga, menganggur / lainnya
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-3">
+					    <i class="form-icon"></i> Karyawan/Wiraswasta
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Hubungan dengan orangtua atau wali</em>
+					<div class="form-group soal-8">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Berkualitas Buruk
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Berkualitas Baik
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Memiliki teman-teman criminal di masyarakat</em>
+					<div class="form-group soal-9">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Ya
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Tidak
+					  </label>
+					</div>
+				</li>
+
+				<li>
+					<em>Pandangan/pendapat mengenai tindak pidana</em>
+					<div class="form-group soal-10">
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-1">
+					    <i class="form-icon"></i> Penting
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-2">
+					    <i class="form-icon"></i> Bermanfaat
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" class="jawaban-3">
+					    <i class="form-icon"></i> Tidak dapat diterima
+					  </label>
+					</div>
+				</li>
+
+			</ol>
+		</fieldset>
+
+		<div class="divider"></div>
+		<p class="text-center">This application is made by <a href="https://api.whatsapp.com/send?phone=6281545143654&text=Assalamualaikum%20Kak%20Zen.%20Saya%20menggunakan%20aplikasi%20assesment%20resiko%20residivis">Zen</a> &bull; ideas and creative by <a href="https://api.whatsapp.com/send?phone=6285250216569&text=Assalamualaikum%20Kak%20Rama.%20Saya%20menggunakan%20aplikasi%20assesment%20resiko%20residivis">Tamyiz Ade Rama, S.Psi</a> &bull; UPT. BAPAS Samarinda &bull; Kementrian Hukum dan HAM &bull; Provinsi Kalimantan Timur</p>
+
+	</div>
+
+	<!-- skrip -->
+
+	<script type="text/javascript" src="bin/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="bin/custom/konversi.js"></script>
+
+</body>
+</html>
